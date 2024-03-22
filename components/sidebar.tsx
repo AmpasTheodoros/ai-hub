@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Kdam_Thmor_Pro, Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard, Sword,  Dices, Shield, FileText, Settings} from "lucide-react";
+import { LayoutDashboard, Shield, FileText, Settings, View, MessageSquare} from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const kdamThmorPro = Kdam_Thmor_Pro ({
@@ -20,28 +20,22 @@ const routes = [
         color: "text-sky-500",
     },
     {
-        label: "AI 1",
-        icon: Sword,
-        href: "/dashboard",
-        color: "text-blue-800",
+        label: "Conversation",
+        icon: MessageSquare,
+        href: "/conversation",
+        color: "text-violet-500",
     },
     {
-        label: "AI 1",
-        icon: Dices,
-        href: "/dashboard",
-        color: "text-orange-500",
-    },
-    {
-        label: "AI 1",
-        icon: Shield,
-        href: "/dashboard",
-        color: "text-green-600",
-    },
-    {
-        label: "AI 1",
+        label: "Attention Span PDF",
         icon: FileText,
-        href: "/dashboard",
+        href: "/attention_span_pdf",
         color: "text-emerald-500",
+    },
+    {
+        label: "Filter Extensions",
+        icon: View,
+        href: "/attention_span_pdf",
+        color: "text-orange-500",
     },
     {
         label: "Settings",
@@ -60,7 +54,7 @@ const Sidebar = () => {
                         <Image fill alt='Logo' src="/logo.png"/>
                     </div>
                     <h1 className={cn("text-2xl font-bold", kdamThmorPro.className)}>
-                        Axepted
+                    Aeye
                     </h1>
                 </Link>
                 <div className="space-y-1">
