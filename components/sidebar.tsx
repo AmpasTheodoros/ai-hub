@@ -34,7 +34,7 @@ const routes = [
     {
         label: "Filter Extensions",
         icon: View,
-        href: "/attention_span_pdf",
+        href: "/Filter Extensions",
         color: "text-orange-500",
     },
     {
