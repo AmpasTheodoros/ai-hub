@@ -12,7 +12,7 @@ import { Input } from "@/components/ui/input";
 import { formSchema } from "./constants";
 import { Button } from "@/components/ui/button";
 
-const ConversationPage = () => {
+const SpanPdfPage = () => {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -81,4 +81,4 @@ const ConversationPage = () => {
     );
 }
 
-export default ConversationPage;
+export default SpanPdfPage;
