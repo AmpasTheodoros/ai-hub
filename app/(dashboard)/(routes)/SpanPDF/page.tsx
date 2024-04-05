@@ -12,7 +12,9 @@ import { Input } from "@/components/ui/input";
 import { formSchema } from "./constants";
 import { Button } from "@/components/ui/button";
 
-const SpanPdfPage = () => {
+//TODO: to eye filter na fiteui ena dentro to opoio na perni mponous ana lepto pou einai active kai na exi leaderboard me tis prospathies sou
+// episis na exi na kanis mark seires se pdf kai podomodoro tracker
+const SpanPDFPage = () => {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -59,6 +61,8 @@ const SpanPdfPage = () => {
                                     <FormItem className="col-span-12 lg:col-span-10">
                                         <FormControl className="m-0 p-0">
                                             <Input className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent" 
+                                            type="file" 
+                                            accept="application/pdf"
                                             disabled={isLoading}
                                             placeholder="How to increase my attetion span"
                                             {...field}
@@ -81,4 +85,4 @@ const SpanPdfPage = () => {
     );
 }
 
-export default SpanPdfPage;
+export default SpanPDFPage;

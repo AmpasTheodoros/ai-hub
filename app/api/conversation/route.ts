@@ -4,7 +4,8 @@ import Configuration from "openai"
 import OpenAIApi from "openai"
 
 const openai = new OpenAIApi({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: "lm-studio",
+    baseURL: "http://localhost:1234/v1", 
 });
 
 export async function POST(

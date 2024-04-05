@@ -28,7 +28,7 @@ const routes = [
     {
         label: "Attention Span PDF",
         icon: FileText,
-        href: "/attention_span_pdf",
+        href: "/SpanPDFPage",
         color: "text-emerald-500",
     },
     {
